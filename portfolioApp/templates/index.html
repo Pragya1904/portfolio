@@ -1,0 +1,939 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Portfolio</title>
+	<meta name="description" content="">  
+	<meta name="author" content="Pragya">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="{% static 'website/css/base.css' %}">  
+   <link rel="stylesheet" href="{% static 'website/css/main.css' %}">
+   <link rel="stylesheet" href="{% static 'website/css/vendor.css' %}">     
+
+   <!-- script
+   ================================================== -->   
+	<script src="{% static 'website/js/modernizr.js' %}"></script>
+	<script src="{% static 'website/js/pace.min.js' %}"></script>
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="index.html">KARDS</a>
+		      </div>		      
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						{% comment %} <li><a class="smoothscroll"  href="#resume" title="">Resume</a></li> {% endcomment %}
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>		
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h5>Hello, World.</h5>
+	   			<h1>I'm Pragya Ravindrakumar Mugale.</h1>
+
+	   			<p class="intro-position">
+	   				<span>Front-end Developer</span>
+	   				<span>UI/UX Designer</span> 
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+		<li><a href="https://github.com/Pragya1904"><i class="fa fa-github"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/pragya-ravindrakumar-mugale-8b881b206/"><i class="fa fa-linkedin"></i></a></li>
+		<li><a href="https://www.instagram.com/eccentricaatma/"><i class="fa fa-instagram"></i></a></li>
+		<li><a href="https://twitter.com/eccentricaatma"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+				
+   				<img src="{% static 'website/images/profile-pic.jpg' %}" alt="Profile Picture">
+
+				<p class="lead">Hello, I'm a skilled software engineer proficient in a variety of technologies including Flutter, Firebase, Django, MySQL, and more. With experience in notable projects, I specialize in developing robust applications. Let's discuss how I can support your projects.</p>
+			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>A highly motivated individual with a passion for excellence and a drive for success. Committed to delivering exceptional results and exceeding expectations in every endeavor.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Pragya Ravindrakumar Mugale</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>January 04, 2003</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Frontend Developer</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span>www.dummysite.com</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>pragya04r@gmail.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>Equipped with a versatile skill set, I tackle challenges adeptly and adapt swiftly to evolving demands. Committed to continuous improvement, I deliver effective solutions tailored to meet diverse needs.</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>Flutter</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent65"><span>65%</span></div>
+				   	<strong>MySQL</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>Github</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent40"><span>40%</span></div>
+				   	<strong>Django</strong>
+				   </li>
+				   <li>
+
+				   	<div class="progress percent50"><span>50%</span></div>
+				   	<strong>MongoDB</strong>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="https://drive.google.com/file/d/1LUinFGAF02HowdbkzigMhy22KAEICU3h/view?usp=drive_link" title="Download CV" class="button button-primary">Download CV</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	{% comment %} 
+   <section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">Explore my professional journey through a comprehensive timeline of achievements and experiences. Delve into the depth of my expertise and credentials, showcasing a commitment to excellence and continuous growth.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Front-end Developer</h3>
+	   					<p>July 2024 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Incture</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Front-end Developer</h3>
+	   					<p>Jan 2024 - March 2024</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Connectifye</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>SDE Intern</h3>
+	   					<p>Jan 2023 - March 2023</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Zintlr</h4>
+	   					<p> Developed and tested new features for an Android application, resulting in improved user engagement.</p>
+						<p> Collaborated with the development team to fix bugs and enhance app performance, leading to a 20% decrease in crash rates.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Master Degree</h3>
+	   					<p>July 2015 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>University of Life</h4>
+	   					 <p></p>
+						 
+					</div>
+				
+	   			</div> 
+				<!--
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>July 2014 - June 2015</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>State Design University</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   				</div>
+
+	   			</div> 
+				-->
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>Jan 2021 - June 2024</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Sir MVIT College</h4>
+	   					<!--<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+						-->
+					</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features --> {% endcomment %}
+	
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   			<p class="lead">Step into a world of creativity and innovation. Explore my portfolio to witness the fusion of design and functionality, where each project tells a unique story of passion and craftsmanship. Let's inspire and elevate together.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="{% static 'website/images/portfolio/pomofocus.jpg' %}" alt="Pomofocus">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Pomofocus</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Mobile Application
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+				<img src="{% static 'website/images/portfolio/gourmet.jpg' %}" alt="Gourmet">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Gourmet</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Design
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="{% static 'website/images/portfolio/medefind.png' %}"alt="Medefind">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">medefind</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Mobile Application
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="{% static 'website/images/portfolio/blog.jpg' %}" alt="blog">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">blog</h3>	     					    
+		     					    	<span class="folio-types">
+										Mobile Application
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="{% static 'website/images/portfolio/estore.jpg' %}" alt="E-store">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">E-store</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Mobile Application
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	           
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="" alt=""/>
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Pomofocus</h4>		      
+					      <p>Engineered a cutting-edge productivity application, mirroring the functionality of the highly-regarded website
+							pomofocus.io</p>
+
+					      <div class="categories">Mobile Application</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/Pragya1904/pomofocus-clone">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Gourmet</h4>		      
+					      <p>Gourmet food ordering system is a robust and feature-rich web application </p>
+
+					      <div class="categories">Web Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/Pragya1904/food-order">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Medefind</h4>		      
+					      <p>smart e-Store for buying medicine online</p>
+
+					      <div class="categories">Mobile Application</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/Pragya1904/FC62_TheAvengers">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Blog Mania</h4>		      
+					      <p>Explore, Discover, and Engage with a Universe of Blogs!</p>
+
+					      <div class="categories">Mobile Application</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/Pragya1904/sub_space">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>E-commerce app</h4>		      
+					      <p>A cutting-edge semantic search
+							feature using Palm LLM, optimizing the e-commerce user experience</p>
+
+					      <div class="categories">Machine Learning</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/Pragya1904/bthackathon">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+
+	
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Services</h5>
+   			<h1>What Can I Do For You?</h1>
+
+   			<p class="lead">I bring your ideas to life with stunning mobile designs and cross-platform apps. Let's collaborate to create experiences that resonate with your audience and drive success.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+			<div class="service">
+
+				<span class="icon"><i class="icon-chat"></i></span>	   	           
+
+			 <div class="service-content">
+
+				  <h3>Mobile Application Development</h3>
+
+				 <p class="desc">Need a custom mobile app to bring your vision to the fingertips of users? I specialize in crafting tailored mobile applications for both iOS and Android platforms. From concept to launch, I'll work closely with you to ensure your app meets your objectives and delights your audience.
+				 </p> 
+					 
+			 </div>	               
+
+		 	</div> <!-- /service -->
+
+			<div class="service">
+
+				<span class="icon"><i class="icon-toggles"></i></span>	              
+
+			<div class="service-content">
+
+				<h3>UI/UX Design</h3>
+
+				<p class="desc">Elevate your digital presence with intuitive and visually stunning user interfaces. I excel in creating seamless user experiences that captivate audiences and leave a lasting impression. Let's work together to design an interface that reflects your brand identity and enhances user engagement.
+				</p> 
+				 
+			</div>                
+
+		</div> <!-- /service -->
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="icon-earth"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>Webdesign</h3>
+
+		            <p class="desc">Your website is often the first point of contact for potential customers. Let me help you make a memorable impression with a custom-designed website that showcases your unique offerings. Whether you're starting from scratch or looking to revamp your existing site, I'll collaborate with you to create a responsive and visually appealing web presence.
+					</p>
+	         		
+	         	</div> 	         	 
+
+			</div> <!-- /service -->
+
+			<div class="service">	
+
+					<span class="icon"><i class="icon-window"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>Web Development</h3>  
+
+		            <p class="desc">Behind every great website is a solid foundation of code. I specialize in building dynamic and functional websites that are as impressive under the hood as they are on the surface. From front-end design to back-end development, I'll ensure your website is optimized for performance, security, and scalability.
+					</p>
+
+	            </div>	                          
+
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->	
+
+
+	<!-- stats Section
+   ================================================== -->
+	<section id="stats" class="count-up">
+
+		<div class="row">
+			<div class="col-twelve">
+
+				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-pencil-ruler"></i>
+						</div>
+
+						<h3 class="stat-count">
+							20
+						</h3>
+
+						<h5 class="stat-title">
+							Projects Completed
+						</h5>
+
+					</div> <!-- /stat -->					
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-users"></i>
+						</div>
+
+						<h3 class="stat-count">
+							5
+						</h3>
+
+						<h5 class="stat-title">
+							Happy Clients
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-badge"></i>
+						</div>
+
+						<h3 class="stat-count">
+							2
+						</h3>
+
+						<h5 class="stat-title">
+							Awards Received
+						</h5>
+
+					</div> <!-- /stat -->									
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-light-bulb"></i>
+						</div>
+
+						<h3 class="stat-count">
+							100
+						</h3>
+
+						<h5 class="stat-title">
+							Crazy Ideas
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-cup"></i>
+						</div>
+
+						<h3 class="stat-count">
+							0
+						</h3>
+
+						<h5 class="stat-title">
+							Coffee Cups
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-clock"></i>
+						</div>
+
+						<h3 class="stat-count">
+							100
+						</h3>
+
+						<h5 class="stat-title">
+							Hours
+						</h5>
+
+					</div> <!-- /stat -->
+
+				</div> <!-- /stats-list -->
+
+			</div> <!-- /twelve -->
+		</div> <!-- /row -->
+
+	</section> <!-- /stats -->
+
+	
+   <!-- contact
+   ================================================== -->
+    
+	<section id="contact">
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+					<h5>Contact</h5>
+					<h1>I'd Love To Hear From You.</h1>
+
+					<p class="lead">Feel free to reach out to me with any questions, feedback, or inquiries you may have. Whether it's about a project, collaboration opportunity, or just to say hello, I'm always happy to connect and chat!</p>
+
+				</div> 
+			</div> <!-- /section-intro -->
+
+			<div class="row contact-form">
+
+				<div class="col-twelve">
+
+					<!-- form -->
+					<form name="contactForm" id="contactForm" method="post" action="">
+						{% csrf_token %}
+						<fieldset>
+
+							<div class="form-field">
+									<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+							</div>
+							<div class="form-field">
+								<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+							</div>
+							<div class="form-field">
+									<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+							</div>                       
+							<div class="form-field">
+								<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+							</div>                      
+							<div class="form-field">
+								<button class="submitform">Submit</button>
+								<div id="submit-loader">
+								<div class="text-loader">Sending...</div>                             
+									<div class="s-loader">
+											<div class="bounce1"></div>
+											<div class="bounce2"></div>
+											<div class="bounce3"></div>
+										</div>
+									</div>
+							</div>
+
+						</fieldset>
+					</form> <!-- Form End -->
+
+					<!-- contact-warning -->
+					<div id="message-warning">            	
+					</div>            
+					<!-- contact-success -->
+					<div id="message-success">
+						<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+					</div>
+
+					</div> <!-- /col-twelve -->
+				
+			</div> <!-- /contact-form -->
+		
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            Sir MVIT campus<br>
+            Bengaluru, Karnataka<br>
+            562157 INDIA
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>pragya04r@gmail.com<br>
+			   	tempmail@dummy.com			     
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>Phone: (+91) 555 1212<br>
+			   	Mobile: (+91) 555 0100<br>
+			   </p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			      <li><a href="https://github.com/Pragya1904"><i class="fa fa-github"></i></a></li>
+			      <li><a href="https://www.linkedin.com/in/pragya-ravindrakumar-mugale-8b881b206/"><i class="fa fa-linkedin"></i></a></li>
+			      <li><a href="https://www.instagram.com/eccentricaatma/"><i class="fa fa-instagram"></i></a></li>
+			      <li><a href="https://twitter.com/eccentricaatma"><i class="fa fa-twitter"></i></a></li>
+			      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-eight tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright 2024 </span> 
+		        	<span>Design by <a href="#">Pragya</a></span> 
+		        	<!--<span>Distributed by <a href="#">NA</a></span>	-->
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="{% static 'website/js/jquery-2.1.3.min.js' %}"></script>
+   <script src="{% static 'website/js/plugins.js' %}"></script>
+   <script src="{% static 'website/js/main.js' %}"></script>
+
+</body>
+
+</html>
